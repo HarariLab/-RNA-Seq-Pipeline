@@ -1,0 +1,131 @@
+{
+    "outdir":"/gscmnt/gc2645/wgs/km_test",
+    "src":"/gscuser/perezja/app/src",
+    "tmp":"/gscmnt/gc2645/wgs/tmp/brain-eqtl",
+    "logger":"rnaseq.log",
+    "subset":"subset.txt",
+    "host":"perezj@fenix.psych.wucon.wustl.edu",
+    "cohorts": {
+            "msbb": {
+                "tissues": {
+                        "BM10": {
+                            "dir": "/40/Public_Data/bulkRNASeq/201812_MSBB/Gene_Expression/BM10",
+                            "tokens": [
+                                { "type":"bam","ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"SE",
+                            "read_len":"100n"
+                        },
+                        "BM22": {
+                            "dir": "/40/Public_Data/bulkRNASeq/201812_MSBB/Gene_Expression/BM22",
+                            "tokens": [
+                                { "type":"bam","ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"SE",
+                            "read_len":"100n"
+                        },
+                        "BM36": {
+                            "dir": "/40/Public_Data/bulkRNASeq/201812_MSBB/Gene_Expression/BM36",
+                            "tokens": [
+                                { "type":"bam","ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"SE",
+                            "read_len":"100n"
+                        },
+                        "BM44": {
+                            "dir": "/40/Public_Data/bulkRNASeq/201812_MSBB/Gene_Expression/BM44",
+                            "tokens": [
+                                { "type":"bam","ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"SE",
+                            "read_len":"100n"
+                        }
+                }
+            },
+            "gtex": {
+                "tissues": {
+                        "brain": {
+                            "dir":"TODO",
+                            "tokens": [
+                                { "ext":".bam" } ],
+                            "id_sep":"TODO",
+                            "read_type":"PE",
+                            "read_len":"75n"
+                        }
+                }
+            },
+            "mayo": {
+               "tissues": {
+                        "cerebellum": {
+                            "dir": "/40/Public_Data/bulkRNASeq/201606_MayoRNAseq/cerebellum",
+                            "tokens": [
+                                { "ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"PE",
+                            "read_len":"100n"
+                        },
+                        "path_aging": {
+                            "dir": "/40/Public_Data/bulkRNASeq/201606_MayoRNAseq/path_aging",
+                            "tokens": [
+                                { "ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"PE",
+                            "read_len":"100n"
+                        },
+                        "temporal_cortex": {
+                            "dir": "/40/Public_Data/bulkRNASeq/201606_MayoRNAseq/temporal_cortex",
+                            "tokens": [
+                                { "ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"PE",
+                            "read_len":"100n"
+                        }
+                }
+            },
+            "knight": {
+                "tissues": {
+                        "parietal_lobe": {
+                            "dir": "/40/Cruchaga_Data/bulkRNASeq/201703_MendelianVsSporadics",
+                            "tokens": [
+                                { "ext":".bam" } ],
+                            "id_sep":"NA",
+                            "read_type":"PE",
+                            "read_len":"150n"
+                        }
+                }
+            },
+            "rosmap": {
+                "tissues": {
+                        "dorsolateral_prefrontal_cortex": {
+                            "dir": "/40/Public_Data/bulkRNASeq/201506_ROSMAP/Gene_Expression/BulkDLPFC_RNAseq",
+                            "tokens": [
+                                { "ext":".bam" } ],
+                            "id_sep":"NA",
+                            "read_type":"PE",
+                            "read_len":"100n"
+                        }
+                }
+            }
+    },
+    "storage":{
+        "raw":"01.-RawData",
+        "qc":"02.-ProcessedData/01.-QC",
+        "bams":"02.-ProcessedData/02.-bams",
+        "aligned":"02.-ProcessedData/03.-STAR/Hg19",
+        "quant":"02.-ProcessedData/04.-Salmon/Hg19"
+    },
+    "genome": {
+        "ref": "/40/pipelines/RNAseq/STAR/Hg19_gencodev19_spikein/GRCh37.p13.genome.lite.spike-in.fa",
+        "annot": "/40/pipelines/RNAseq/STAR/Hg19_gencodev19_spikein/gencode.v19.annotation.spike-in.gtf",
+        "ref_flat":"/40/pipelines/RNAseq/picard_files/Hg19_gencodev19_spikein_refFlat.txt",
+        "ribosomal_int":"/40/pipelines/RNAseq/picard_files/hg19_UCSC_rmsk_rRNA_Gencode_interval.list"
+,
+        "star_index":[
+            {"len":"50n", "dir":"/40/pipelines/RNAseq/STAR/Hg19_gencodev19_spikein/50n" },
+ 
+            {"len":"100n", "dir":"/40/pipelines/RNAseq/STAR/Hg19_gencodev19_spikein/100n" },
+            {"len":"150n","dir":"/40/pipelines/RNAseq/STAR/Hg19_gencodev19_spikein/150n" }
+        ],
+        "salmon_index":"/40/pipelines/RNAseq/Salmon/gencodev19_spikein.transcripts.fin.fa"
+    }
+}

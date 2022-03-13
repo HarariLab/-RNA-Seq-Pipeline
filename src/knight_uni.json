@@ -1,0 +1,45 @@
+{
+    "outdir":"/gscmnt/gc2645/wgs/km_test",
+    "src":"/gscmnt/gc2645/wgs/km_test/unified/src",
+    "tmp":"/gscmnt/gc2645/wgs/tmp/brain-eqtl",
+    "logger":"rnaseq.log",
+    "subset":"subset.txt",
+    "host":"mihinduk@fenix.psych.wucon.wustl.edu",
+    "cohorts": {
+            "knight": {
+                "tissues": {
+                        "parietal": {
+                            "dir": "/gscmnt/gc2645/wgs/km_test/knight/01.-RawData/parietal",
+                            "tokens": [
+                                { "type":"bam","ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"PE",
+                            "read_len":"150n"
+                        }
+                }
+            }
+	},
+	"storage":{
+        "raw":"01.-RawData",
+        "qc":"02.-ProcessedData/01.-QC",
+        "bams":"02.-ProcessedData/02.-bams",
+        "aligned":"02.-ProcessedData/03.-STAR/Hg38",
+        "quant":"02.-ProcessedData/04.-Salmon/Hg38",
+		"tin":"02.-ProcessedData/05.-PostAlign/Hg38/TIN",
+		"circ":"02.-ProcessedData/06.-circRNA/Hg38"
+    },
+    "genome": {
+        "ref": "/gscmnt/gc2645/wgs/km_test/genome.2.7.1a/Hg38/GRCh38.primary_assembly.genome.fa",
+        "annot": "/gscmnt/gc2645/wgs/km_test/genome.2.7.1a/Hg38/gencode.v26.primary_assembly.annotation.gtf",
+        "ref_flat":"/gscmnt/gc2645/wgs/km_test/genome.2.7.1a/Hg38/hg38.refFlat.txt",
+        "ribosomal_int":"/gscmnt/gc2645/wgs/km_test/genome.2.7.1a/Hg38/hg38_ribosome_interval_list.txt"
+,
+        "star_index":[
+            {"len":"50n", "dir":"/gscmnt/gc2645/wgs/km_test/genome.2.7.1a/Hg38/50n" },
+            {"len":"75n", "dir":"/gscmnt/gc2645/wgs/km_test/genome.2.7.1a/Hg38/75n" },
+            {"len":"100n", "dir":"/gscmnt/gc2645/wgs/km_test/genome.2.7.1a/Hg38/100n" },
+            {"len":"150n","dir":"/gscmnt/gc2645/wgs/km_test/genome.2.7.1a/Hg38/150n/" }
+        ],
+        "salmon_index":"/gscmnt/gc2645/wgs/km_test/genome.2.7.1a/Hg38/salmon/gencode.v26.transcripts.fin.fa"
+    }
+}

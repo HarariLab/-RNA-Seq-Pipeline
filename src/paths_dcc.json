@@ -1,0 +1,200 @@
+{
+    "outdir":"/gscmnt/gc2645/wgs/km_test/dcc",
+	"resources":"/gscmnt/gc2645/wgs/resources/RNAseq",
+    "src":"/gscmnt/gc2645/wgs/km_test/dcc/Uni_src/",
+    "tmp":"/gscmnt/gc2645/wgs/tmp/brain-eqtl",
+    "logger":"dcc.log",
+    "host":"mihinduk@fenix.psych.wucon.wustl.edu",
+    "cohorts": {
+            "msbb": {
+                "tissues": {
+                        "BM10": {
+                            "tokens": [
+                                { "type":"bam","ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"SE",
+                            "read_len":"100n"
+                        },
+                        "BM22": {
+                            "tokens": [
+                                { "type":"bam","ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"SE",
+                            "read_len":"100n"
+                        },
+                        "BM36": {
+                            "tokens": [
+                                { "type":"bam","ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"SE",
+                            "read_len":"100n"
+                        },
+                        "BM44": {
+                            "tokens": [
+                                { "type":"bam","ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"SE",
+                            "read_len":"100n"
+                        }
+                }
+            },
+            "gtex": {
+                "tissues": {
+                        "Amygdala": {
+                            "tokens": [
+                                { "type":"fastq", "ext":".gz" } ],
+                            "id_sep":"_",
+                            "read_type":"PE",
+                            "read_len":"75n"
+							},
+							"Anterior_cingulate_cortex_BA24": {
+                            "tokens": [
+                                { "type":"fastq", "ext":".gz" } ],
+                            "id_sep":"_",
+                            "read_type":"PE",
+                            "read_len":"75n"
+                        },
+						"Caudate_basal_ganglia": {
+                            "tokens": [
+                                { "type":"fastq", "ext":".gz" } ],
+                            "id_sep":"_",
+                            "read_type":"PE",
+                            "read_len":"75n"
+                        },
+						"Cerebellar_Hemisphere": {
+                            "tokens": [
+                                { "type":"fastq", "ext":".gz" } ],
+                            "id_sep":"_",
+                            "read_type":"PE",
+                            "read_len":"75n"
+                        },
+						"Cerebellum": {
+                            "tokens": [
+                                { "type":"fastq", "ext":".gz" } ],
+                            "id_sep":"_",
+                            "read_type":"PE",
+                            "read_len":"75n"
+                        },
+						"Cortex": {
+                            "tokens": [
+                                { "type":"fastq", "ext":".gz" } ],
+                            "id_sep":"_",
+                            "read_type":"PE",
+                            "read_len":"75n"
+                        },
+						"Frontal_Cortex_BA9": {
+                            "tokens": [
+                                { "type":"fastq", "ext":".gz" } ],
+                            "id_sep":"_",
+                            "read_type":"PE",
+                            "read_len":"75n"
+                        },
+						"Hippocampus": {
+                            "tokens": [
+                                { "type":"fastq", "ext":".gz" } ],
+                            "id_sep":"_",
+                            "read_type":"PE",
+                            "read_len":"75n"
+                        },
+						"Hypothalamus": {
+                            "tokens": [
+                                { "type":"fastq", "ext":".gz" } ],
+                            "id_sep":"_",
+                            "read_type":"PE",
+                            "read_len":"75n"
+                        },
+						"Nucleus_accumbens_basal_ganglia": {
+                            "tokens": [
+                                { "type":"fastq", "ext":".gz" } ],
+                            "id_sep":"_",
+                            "read_type":"PE",
+                            "read_len":"75n"
+                        },
+						"Putamen_basal_ganglia": {
+                            "tokens": [
+                                { "type":"fastq", "ext":".gz" } ],
+                            "id_sep":"_",
+                            "read_type":"PE",
+                            "read_len":"75n"
+                        },
+						"Spinal_cord_cervical_c-1": {
+                            "tokens": [
+                                { "type":"fastq", "ext":".gz" } ],
+                            "id_sep":"_",
+                            "read_type":"PE",
+                            "read_len":"75n"
+                        },
+						"Substantia_nigra": {
+                            "tokens": [
+                                { "type":"fastq", "ext":".gz" } ],
+                            "id_sep":"_",
+                            "read_type":"PE",
+                            "read_len":"75n"
+                        }
+                }
+            },			
+            "mayo": {
+               "tissues": {
+                        "cerebellum": {
+                            "tokens": [
+                                { "type":"bam", "ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"PE",
+                            "read_len":"100n"
+                        },
+                        "path_aging": {
+                            "tokens": [
+                                { "type":"bam", "ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"PE",
+                            "read_len":"100n"
+                        },
+                        "temporal_cortex": {
+                            "tokens": [
+                                { "type":"bam", "ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"PE",
+                            "read_len":"100n"
+                        }
+                }
+            },
+            "knight": {
+                "tissues": {
+                        "parietal": {
+                            "tokens": [
+                                { "type":"bam", "ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"PE",
+                            "read_len":"150n"
+                        }
+                }
+            },
+            "rosmap": {
+                "tissues": {
+                        "dorsolateral_prefrontal_cortex": {
+                            "tokens": [
+                                { "type":"bam", "ext":".bam" } ],
+                            "id_sep":".",
+                            "read_type":"PE",
+                            "read_len":"100n"
+                        }
+                }
+            }
+    },
+    "storage":{
+        "raw":"01.-RawData",
+        "qc":"02.-ProcessedData/01.-QC",
+        "bams":"02.-ProcessedData/02.-bams",
+        "aligned":"02.-ProcessedData/03.-STAR/Hg19",
+        "quant":"02.-ProcessedData/04.-Salmon/Hg19",
+		"tin":"02.-ProcessedData/05.-PostAlign/TIN",
+		"circ":"02.-ProcessedData/06.-circRNA/Hg19",
+		"dcc":"02.-ProcessedData/06.-circRNA/Hg19/DCC",
+		"dcc_in":"02.-ProcessedData/06.-circRNA/Hg19/DCC/DCC_InputFiles"
+    },
+    "genome": {
+        "ref": "/gscmnt/gc2645/wgs/resources/RNAseq/genome/GRCh37.p13.genome.lite.spike-in.fa",
+        "annot": "/gscmnt/gc2645/wgs/resources/RNAseq/genome/gencode.v19.annotation.spike-in.gtf",
+		"repeat_mask":"/gscmnt/gc2645/wgs/resources/RNAseq/genome/hg19_Repeats_RepeatMasker_SimpleRepeats.gtf"
+    }
+}
