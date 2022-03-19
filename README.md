@@ -1,4 +1,4 @@
-# RNA-Seq-Pipeline - a pipeline used to process bulk-RNA-Seq data. 
+# RNA-Seq-Pipeline - a pipeline to process bulk-RNA-Seq data. 
 ## Current Implementation:
 -  Quality control on raw sequence data (FastQC).
 - Revert and merge BAM files (Picard + Samtools). 
